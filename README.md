@@ -1,75 +1,98 @@
-<h1>Motivation</h1>
+# Competitive MOBA Gameplay Analysis
 
-For my project, I aimed to analyze my interaction with competitive gaming and performance improvement over time. Since League of Legends (LoL) is my primary game of focus, I decided to base the analysis on my match and champion data.
+## Motivation
 
-The motivation for this project is to gain deeper insights into my gameplay patterns, including:
+This project focuses on analyzing personal gameplay data from a competitive MOBA game to better understand performance trends, playstyle patterns, and long-term improvement.
 
-The champions I play most frequently.
-* My match performances.
-* My rank progression across different seasons.
-* By analyzing this data, I aim to identify trends in my gameplay and areas for improvement.
+By examining match history and character usage data, the goal is to gain actionable insights into how gameplay behavior evolves over time and which factors contribute most to performance improvement.
 
-*You can access my website from : https://KaganAliKorkmaz.github.io/LeagueOfLegendsDataProject/
+The analysis aims to answer questions such as:
+- Which characters are played most frequently?
+- How performance metrics change over time
+- How rank progression evolves across different seasons
+- Which characters yield the most consistent results
 
-*You can access my presentation from : https://github.com/KaganAliKorkmaz/LeagueOfLegendsDataProject/blob/main/slides_mydata.pptx
+---
 
-<h1>Tools</h1>
+## Tools & Technologies
 
-I used the following tools and libraries to collect, process, and analyze my data:
+The following tools and libraries were used for data collection, processing, and analysis:
 
-* Python : The primary programming language for data scraping, cleaning, and analysis.
-* Selenium : For automating data scraping from the web, including match history and champion data.
-* Pandas : For data cleaning, structuring, and transformation.
-* Matplotlib and Seaborn : For data visualization, including bar plots, line graphs, and scatter plots.
+- **Python** – Primary language for data scraping, cleaning, and analysis  
+- **Selenium** – Automated data extraction from web-based match history sources  
+- **Pandas** – Data cleaning, transformation, and aggregation  
+- **Matplotlib & Seaborn** – Data visualization and exploratory analysis  
 
+---
 
-<h1>Data Source</h1>
+## Data Source
 
-The data for this project comes from a single primary source:
+All data used in this project was collected from a public match history and statistics platform for competitive MOBA games.
 
-* OP.GG Match and Champion Data : All data was scraped directly from the OP.GG website using Selenium automation scripts. This includes:
-* Match Data : Match dates, K/D/A ratios, ranks, and performance metrics like CS (creep score).
+The dataset includes:
+- Match-level data (dates, performance metrics, rankings)
+- Character-level data (games played, win rates, KDA-style metrics)
 
+Data was collected using automated web scraping scripts and processed locally.
 
-<h1>Data Processing</h1>
+---
 
-You can access my dataset and code related to it from : https://github.com/KaganKorkmax/LeagueOfLegendsDataProject/tree/main/DATA
+## Data Processing
 
-<h2>Match Data</h2>
+### Match Data
+- **Rank Normalization**: Text-based ranks (e.g., tier + division) were converted into numerical values for quantitative analysis
+- **Data Cleaning**: Matches with missing or invalid values were removed to ensure consistency
 
-* Rank Mapping: Converted ranks such as "Silver 2" or "Gold 4" into numerical values for analysis.
-* Filtering Invalid Matches: Dropped rows with missing or "N/A" values to focus only on valid matches.
+### Character Data
+- **Aggregation Across Seasons**: Statistics for the same character were combined across multiple seasons
+- **Filtering**: Characters with insufficient data or zero activity were excluded from analysis
 
-<h2>Champion Data</h2>
+---
 
-* Champion Aggregation: Combined data from multiple seasons for the same champion to calculate total games played and averaged win rates.
-* Filtering: Dropped champions with zero win rates or games played.
+## Data Visualizations
 
+The following visual analyses were performed:
 
+- **Seasonal Rank Progression**  
+  Bar charts showing average rank achieved per season
 
-<h1>Data Visualizations</h1>
+- **Playtime Distribution**  
+  Estimated total playtime per season based on average match duration
 
-* Seasonal Rank Progression : A bar chart showing the average rank achieved in each season.
-* Total Playtime by Season : A bar chart illustrating the total hours spent playing across seasons, assuming an average game duration of 40 minutes.
-* Champion Analysis : A bar chart of the top 10 most-played champions, showing games played on the x-axis and average KDA on the y-axis.
-A scatter plot comparing win rates against KDA values for all champions played across seasons.
-* Performance Trends Over Time : A line chart showing rank progression across individual matches in chronological order.
+- **Character Usage Analysis**  
+  - Top most-played characters by total games  
+  - Comparison of performance metrics such as KDA-style ratios  
 
+- **Performance Trends Over Time**  
+  Line charts showing rank or performance changes across consecutive matches
 
+---
 
-<h1>Data Analysis</h1>
+## Data Analysis
 
-* Rank Progression : Analyzed the player's rank progression over time and across seasons.
-* Champion Performance : Identified the most effective champions based on win rate and KDA.
-Assessed the consistency of performance across different seasons for the same champions.
-* Playtime Insights : Measured the total time spent playing in each season and identified patterns in activity levels.
-* Statistical Comparisons : Conducted hypothesis tests to check for significant differences in win rates or performance metrics across seasons or champions.
+Key analytical insights include:
 
-<h1>Conclusion</h1>
+- **Rank Progression Analysis**  
+  Evaluation of long-term improvement and seasonal performance trends
 
-This project provided valuable insights into my gaming behavior and performance trends. By analyzing my match history and champion statistics, I identified patterns such as:
+- **Character Effectiveness**  
+  Identification of characters with higher win rates and more stable performance
 
-* My most effective champions.
-* Peak performance periods.
-* Seasonal rank progression.
+- **Consistency Across Seasons**  
+  Comparison of performance metrics for the same characters over different time periods
 
+- **Statistical Comparisons**  
+  Basic hypothesis testing to identify significant differences between characters or seasons
+
+---
+
+## Conclusion
+
+This project demonstrates how personal gameplay data from competitive multiplayer games can be transformed into meaningful insights through data analysis.
+
+Key outcomes include:
+- Identification of the most effective and frequently used characters
+- Clear visualization of performance improvement over time
+- Better understanding of playstyle consistency and variability across seasons
+
+Overall, the project highlights the value of data-driven self-analysis in competitive gaming environments.
