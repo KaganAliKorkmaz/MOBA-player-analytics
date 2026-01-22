@@ -9,9 +9,9 @@ The champions I play most frequently.
 * My rank progression across different seasons.
 * By analyzing this data, I aim to identify trends in my gameplay and areas for improvement.
 
-*You can access my website from : https://kagankorkmax.github.io/MOBA-player-analytics/
+*You can access my website from : https://KaganAliKorkmaz.github.io/LeagueOfLegendsDataProject/
 
-*You can access my presentation from : https://github.com/KaganKorkmax/LeagueOfLegendsDataProject/blob/main/slides_mydata.pptx
+*You can access my presentation from : https://github.com/KaganAliKorkmaz/LeagueOfLegendsDataProject/blob/main/slides_mydata.pptx
 
 <h1>Tools</h1>
 
