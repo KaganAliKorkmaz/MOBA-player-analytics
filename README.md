@@ -47,8 +47,6 @@ You can access my dataset and code related to it from : https://github.com/Kagan
 
 
 
-
-
 <h1>Data Visualizations</h1>
 
 * Seasonal Rank Progression : A bar chart showing the average rank achieved in each season.
@@ -57,7 +55,6 @@ You can access my dataset and code related to it from : https://github.com/Kagan
 A scatter plot comparing win rates against KDA values for all champions played across seasons.
 * Performance Trends Over Time : A line chart showing rank progression across individual matches in chronological order.
 
-You can access my vizulization codes and related jpegs from : https://github.com/KaganKorkmax/LeagueOfLegendsDataProject/tree/main/Visualization
 
 
 <h1>Data Analysis</h1>
